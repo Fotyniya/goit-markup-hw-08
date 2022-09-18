@@ -1,0 +1,26 @@
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    min-width: 1200px;
+}
+.overlay {
+    background-color: var(--background-hero);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgstudio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero__title-hero {
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-right: auto;
+    @include font(900, 44px, 60px, 0.06em);
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 696px;
+}

@@ -1,0 +1,23 @@
+.activity {
+    padding-top: 0px;
+}
+.activity__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;   
+}
+.activity__item {
+    position: relative;
+}
+.activity__description {
+    position: absolute;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    @extend %align;
+    background-color: rgba(47, 48, 58, 0.8);
+    @include font(700, 14px, 16px, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}

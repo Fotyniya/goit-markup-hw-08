@@ -1,0 +1,28 @@
+.clients__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.clients__link {
+    @extend %align;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    transition: border-color var(--transition-timing-function);
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        cursor: pointer;
+    }
+}
+
+.clients__logo {
+    display: flex;
+    fill: #AFB1B8; 
+    transition: fill var(--transition-timing-function);
+    .clients__link:hover &,
+    .clients__link:focus & {
+        fill: var(--accent-color);
+    }
+}

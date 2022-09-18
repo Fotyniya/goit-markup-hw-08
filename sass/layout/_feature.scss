@@ -1,0 +1,17 @@
+.feature__list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.feature__item{
+    @extend %align;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.feature__item-icon {
+    @extend %align;
+}

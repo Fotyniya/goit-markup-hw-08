@@ -1,0 +1,5 @@
+.text {
+    @include font(400, 14px, 24px, 0.03em);
+    color: var(--text-color);
+    width: 270px;
+}
