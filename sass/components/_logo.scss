@@ -1,9 +1,5 @@
 .logo {
     font-family: 'Raleway', sans-serif;
-    @include font(700, 26px, 31px, 0.03em);
-}
-.page-navigation__logo {
-    margin-right: 96px;
 }
 .logo__logo-web {
     color: var(--accent-color);
@@ -14,7 +10,24 @@
 .logo__logo-studio_dark-theme {
     color: var(--logo-studio-light);
 }
-.footer__logo {
-    display: block;
-    margin-bottom: 20px;
+@media screen and (max-width: 1199px) {
+    .logo {
+        @include font(700, 24px, 28px, 0.03em);
+    }
+    .page-navigation__logo {
+        margin-right: 88px;
+    }  
 }
+@media screen and (min-width: 1200px) {
+    .logo {
+        @include font(700, 26px, 31px, 0.03em);
+    }
+    .page-navigation__logo {
+        margin-right: 92px;
+    }   
+}
+
+// .footer__logo {
+//     display: block;
+//     margin-bottom: 20px;
+// }
