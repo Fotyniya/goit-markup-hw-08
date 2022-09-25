@@ -19,6 +19,7 @@
     .page-header {
         padding-top: 10px;
         padding-bottom: 10px;
+        border-bottom: 1px solid #ECECEC;
     }
     .page-header__container {
         display: flex;
@@ -52,10 +53,10 @@
         &:focus {
             color: var(--accent-color);
         }
-        &.menu-nav__item-current {
+        &.menu-nav__item_current {
             color: var(--accent-color);
         }
-        &.menu-nav__item-current::after {
+        &.menu-nav__item_current::after {
             position: absolute;
             content: "";
             bottom: -1px;

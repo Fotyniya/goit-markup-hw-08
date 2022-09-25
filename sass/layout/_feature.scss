@@ -1,17 +1,31 @@
 .feature__list {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     gap: 30px;
     flex-wrap: wrap;
 }
-.feature__item{
-    @extend %align;
-    width: 270px;
+.feature__card {
+    @extend %align; 
     height: 120px;
-    background-color: #F5F4FA;
+    background-color: #f5f4fa;
     border-radius: 4px;
     margin-bottom: 30px;
 }
-.feature__item-icon {
+.feature__icon {
     @extend %align;
+}
+.feature__description {
+    @include font(400, 14px, 24px, 0.03em);
+    color: var(--text-color);
+}
+@media screen and (min-width: 768px){
+    .feature__item {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+} 
+@media screen and (min-width: 1200px) {
+    .feature__item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
 }

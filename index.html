@@ -27,7 +27,7 @@
           </a>
           <ul class="menu-nav list">
             <li class="menu-nav__item">
-              <a href="./index.html" class="link menu-nav__item-current">
+              <a href="./index.html" class="link menu-nav__item_current">
                 Студія
               </a>
             </li>
@@ -73,47 +73,47 @@
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-            <ul class="list">
-              <li>
-                <a href="./index.html" class="link">
-                  Студія
-                </a>
-              </li>
-              <li>
-                <a href="./index.html" class="link">
-                  Портфоліо
-                </a>
-              </li>
-              <li>
-                <a href="./index.html" class="link">
-                  Контакти
-                </a>
-              </li>
-            </ul>
-            <ul class="list">
-              <li>
-                <a href="mailto:info@devstudio.com" class="link">
-              info@devstudio.com
-            </a>
-              </li>
-              <li>
-                <a href="tel:+380961111111" class="link">
-                  +38 096 111 11 11
-                </a>
-              </li>
-            </ul>
-            <ul class="list">
-              <li><a href="" class="link">Instagram</a></li>
-              <li><a href="" class="link">Twitter</a></li>
-              <li><a href="" class="link">Facebook</a></li>
-              <li><a href="" class="link">LinkedIn</a></li>
-            </ul>
+          <ul class="list mobile-menu__item">
+            <li class="mobile-menu__link">
+              <a href="./index.html" class="link">
+                Студія
+              </a>
+            </li>
+            <li class="mobile-menu__link">
+              <a href="./index.html" class="link">
+                Портфоліо
+              </a>
+            </li>
+            <li class="mobile-menu__link">
+              <a href="./index.html" class="link">
+                Контакти
+              </a>
+            </li>
+          </ul>
+          <ul class="list mobile-menu__contacts">
+             <li>
+              <a href="tel:+380961111111" class="link mobile-menu__contacts-tel">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="link mobile-menu__contacts-mail">
+            info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="list mobile-menu__social-list">
+            <li class="mobile-menu__social-item"><a href="" class="link mobile-menu__social-link">Instagram</a></li>
+            <li class="mobile-menu__social-item"><a href="" class="link mobile-menu__social-link">Twitter</a></li>
+            <li class="mobile-menu__social-item"><a href="" class="link mobile-menu__social-link">Facebook</a></li>
+            <li class="mobile-menu__social-item"><a href="" class="link mobile-menu__social-link">LinkedIn</a></li>
+          </ul>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- <section class="hero overlay">
+      <section class="hero overlay">
         <div class="container">
           <h1 class="hero__title-hero">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="btn" data-modal-open>
@@ -125,11 +125,11 @@
         <div class="container">
           <h2 class="title-section title-invisible">Особливості</h2>
           <ul class="feature__list list">
-            <li>
-              <div class="feature__item">
+            <li class="feature__item">
+              <div class="feature__card">
                 <svg
                   aria-label="антена"
-                  class="feature__item-icon"
+                  class="feature__icon"
                   width="70"
                   height="70"
                 >
@@ -137,16 +137,16 @@
                 </svg>
               </div>
               <h2 class="subtitle">Увага до деталей</h2>
-              <p class="text">
+              <p class="feature__description">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
-              <div class="feature__item">
+            <li class="feature__item">
+              <div class="feature__card">
                 <svg
                   aria-label="годинник"
-                  class="feature__item-icon"
+                  class="feature__icon"
                   width="70"
                   height="70"
                 >
@@ -154,16 +154,16 @@
                 </svg>
               </div>
               <h2 class="subtitle">Пунктуальність</h2>
-              <p class="text">
+              <p class="feature__description">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
-              <div class="feature__item">
+            <li class="feature__item">
+              <div class="feature__card">
                 <svg
                   aria-label="діаграма"
-                  class="feature__item-icon"
+                  class="feature__icon"
                   width="70"
                   height="70"
                 >
@@ -171,15 +171,15 @@
                 </svg>
               </div>
               <h2 class="subtitle">Планування</h2>
-              <p class="text">
+              <p class="feature__description">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
-              <div class="feature__item">
+            <li class="feature__item">
+              <div class="feature__card">
                 <svg
                   aria-label="астронавт"
-                  class="feature__item-icon"
+                  class="feature__icon"
                   width="70"
                   height="70"
                 >
@@ -187,7 +187,7 @@
                 </svg>
               </div>
               <h2 class="subtitle">Сучасні технології</h2>
-              <p class="text">
+              <p class="feature__description">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -232,7 +232,7 @@
           </ul>
         </div>
       </section>
-      <section class="our-team">
+      <!-- <section class="our-team">
         <div class="container">
           <h2 class="title-section">Наша команда</h2>
           <ul class="our-team__employees list">
@@ -518,8 +518,8 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="clients">
+      </section> -->
+      <!-- <section class="clients">
         <div class="container">
           <h2 class="title-section">Постійні клієнти</h2>
           <ul class="list clients__list">
@@ -730,7 +730,7 @@
           </span>
         </form>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal__close-btn" data-modal-close>
@@ -843,7 +843,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>
 </html>
