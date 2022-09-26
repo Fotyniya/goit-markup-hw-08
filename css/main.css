@@ -989,29 +989,36 @@ section {
 
 .footer {
   background-color: var(--background-footer);
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 1200px;
 }
 
-.contacts-block {
+.footer__logo {
+  margin-bottom: 20px;
+}
+
+.contacts__list {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 60px;
 }
 
 .contacts__item {
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
-}
-.contacts__item:not(:last-child) {
-  margin-bottom: 9px;
+  font-style: normal;
+  display: block;
 }
 
 .contacts__address {
-  display: block;
   color: #ffffff;
   transition: color var(--transition-timing-function);
 }
@@ -1019,25 +1026,18 @@ section {
   color: var(--accent-color);
 }
 
-.contacts__mail {
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
-  transition: color var(--transition-timing-function);
-}
-.contacts__mail:hover, .contacts__mail:focus {
-  color: var(--accent-color);
-}
-
+.contacts__mail,
 .contacts__tel {
   color: rgba(255, 255, 255, 0.6);
-  display: block;
   transition: color var(--transition-timing-function);
 }
-.contacts__tel:hover, .contacts__tel:focus {
+.contacts__mail:hover, .contacts__mail:focus,
+.contacts__tel:hover,
+.contacts__tel:focus {
   color: var(--accent-color);
 }
 
-.social-footer__title,
+.footer-social__title,
 .form-sign__title {
   font-weight: 700;
   font-size: 14px;
@@ -1048,7 +1048,7 @@ section {
   margin-bottom: 20px;
 }
 
-.social-footer__list {
+.social-list_footer {
   padding-bottom: 0;
 }
 
@@ -1060,40 +1060,34 @@ footer .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-footer {
-  margin-left: 70px;
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
 }
 
 .form-sign {
-  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-sign__input {
   display: flex;
-  justify-content: center;
-}
-
-.form-sign__btn {
-  display: flex;
-  justify-content: center;
-  width: 200px;
+  flex-direction: column;
   align-items: center;
-  margin-left: 12px;
-  padding: 10px 28px;
-}
-
-.form-sign__icon {
-  margin-left: 10px;
 }
 
 .form-sign__field {
-  width: 358px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   padding: 15px 16px;
   color: #FFFFFF;
+  margin-bottom: 20px;
 }
 .form-sign__field::placeholder {
   font-weight: 400;
@@ -1101,4 +1095,76 @@ footer .social-list__link {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.form-sign__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 200px;
+}
+
+.form-sign__icon {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .form-sign__field {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-social {
+    margin-bottom: 0;
+  }
+  .contacts__list {
+    margin-bottom: 0;
+  }
+  .footer__info {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__info {
+    margin-bottom: 0;
+  }
+  .contacts__list {
+    align-items: flex-start;
+    gap: 9px;
+    margin-bottom: 0;
+    margin-right: 70px;
+  }
+  .footer-social {
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+  .form-sign {
+    flex-direction: row;
+    align-content: flex-end;
+    gap: 12px;
+    align-items: flex-end;
+  }
+  .form-sign__input {
+    align-items: flex-start;
+  }
+  .form-sign__field {
+    width: 358px;
+    margin-bottom: 0;
+  }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }/*# sourceMappingURL=main.css.map */
