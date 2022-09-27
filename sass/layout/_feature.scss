@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .feature__card {
     @extend %align; 
