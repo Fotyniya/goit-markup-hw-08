@@ -1,8 +1,10 @@
 .btn-filter-container {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
-    justify-content: center;
-    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 8px;
+    row-gap: 15px;
 }
 .btn-filter-container__btn {
     @include font (500, 16px, 26px, 0.03em);
@@ -22,7 +24,18 @@
     }
 }
 .btn-filter-container__btn_size-s {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 6px 25px;
+}
+@media screen and (min-width: 768px) {
+    .btn-filter-container {
+        margin-bottom: 30px;
+        justify-content: center;
+    }    
+}
+@media screen and (min-width: 1200px) {
+    .btn-filter-container {
+        margin-bottom: 50px;
+        justify-content: center;
+    }    
 }
 

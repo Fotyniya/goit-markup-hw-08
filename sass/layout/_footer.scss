@@ -10,7 +10,6 @@
 .footer__logo {
     margin-bottom: 20px;
 }
-
 .contacts__list {
     display: flex;
     flex-direction: column;
@@ -111,13 +110,17 @@ footer .social-list__link {
 @media screen and (min-width: 768px) {
     .footer-social {
         margin-bottom: 0;
+        margin-right: 74px;
     } 
+    .footer__contacts {
+        margin-left: 61px;
+    }
     .contacts__list {
         margin-bottom: 0;
     } 
     .footer__info {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: baseline;
         margin-bottom: 60px;
     } 
