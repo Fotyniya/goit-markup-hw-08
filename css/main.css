@@ -1220,7 +1220,7 @@ footer .social-list__link {
   }
   .footer__info {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: baseline;
     margin-bottom: 60px;
   }
@@ -1229,11 +1229,17 @@ footer .social-list__link {
   .footer__info {
     margin-bottom: 0;
   }
+  .footer-social {
+    margin-right: 0;
+  }
   .contacts__list {
     align-items: flex-start;
     gap: 9px;
     margin-bottom: 0;
     margin-right: 70px;
+  }
+  .footer__contacts {
+    margin-left: 0;
   }
   .footer-social {
     align-items: flex-start;
