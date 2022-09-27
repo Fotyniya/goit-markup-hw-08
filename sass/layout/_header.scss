@@ -15,6 +15,14 @@
     .open-mobile-menu-btn__icon {
         width: 40px;
         height: 40px;
+        transition: fill var(--transition-timing-function);
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
+    }
+    .mobile-menu .mobile-menu__item_current {
+        color: var(--accent-color);
     } 
     .page-header {
         padding-top: 10px;
