@@ -757,6 +757,9 @@ section {
     padding-top: 24px;
     padding-bottom: 24px;
   }
+  .menu-nav a.menu-nav__item_current::after {
+    margin-bottom: 3px;
+  }
 }
 .hero {
   padding-top: 118px;
@@ -827,6 +830,12 @@ section {
 @media screen and (min-width: 1200px) {
   .hero__title-hero {
     max-width: 696px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .subtitle {
+    display: flex;
+    justify-content: center;
   }
 }
 .feature__list {
@@ -1220,7 +1229,7 @@ footer .social-list__link {
   }
   .footer__info {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: baseline;
     margin-bottom: 60px;
   }

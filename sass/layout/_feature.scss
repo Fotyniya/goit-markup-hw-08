@@ -1,3 +1,9 @@
+@media screen and (max-width: 767px) {
+    .subtitle {
+        display: flex;
+        justify-content: center;
+    }
+}
 .feature__list {
     display: flex;
     justify-content: center;
